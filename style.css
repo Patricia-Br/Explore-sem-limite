@@ -1,0 +1,217 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  font-size: 62.5%;
+
+  --base-color-pink: #B52184;
+  --base-color-blue: #312D64;
+  --base-color-gray: #F9F4FB;
+  --base-color-white: #ffffff;
+}
+
+body{
+  font-size: 1.6rem;
+  font-family: "Mulish", sans-serif;
+  background-color: var(--base-color-gray);
+}
+
+/* ===================================================== */
+
+
+header{
+  padding: 0 3.9rem;
+  margin-bottom: 9.3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+header div{
+  display: flex;
+  flex-direction: column;
+  max-width: 55.4rem;
+  align-items: center;
+
+}
+
+header #astronauta{
+  width: 100%;
+  padding-bottom: 1.7rem;
+}
+
+header h1{
+  color: var(--base-color-pink);
+  font-size: 3.2rem;
+  font-weight: 900;
+  padding-bottom: .5rem;
+}
+
+header p{
+  color: var(--base-color-blue);
+  font-size: 2rem;
+  font-weight: 600;
+  padding-bottom: 3.5rem;
+}
+
+
+
+
+/* ===================================================== */
+
+
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5.2rem 3.9rem;
+  background: var(--base-color-blue);
+  gap: 5rem;
+}
+
+
+.card{
+  
+  padding: 2.6rem;
+  background: var(--base-color-white);
+  border-radius: 1.9rem;
+}
+
+.card img{
+  padding-bottom: 3.3rem;
+}
+
+
+.description h2{
+  color: var(--base-color-pink);
+  font-size: 2.9rem;
+  font-weight: 900;
+  padding-bottom: 1.9rem;
+}
+
+.description p{
+  color: var(--base-color-blue);
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+
+/* ================================================== */
+
+
+form{
+  padding: 7.8rem 3.9rem 6.5rem;
+}
+form .stars{
+  right: 0;
+}
+
+fieldset{
+  border: none;
+}
+
+fieldset div{
+  border: 2px solid var(--base-color-blue);
+  border-radius: 1.6rem;
+
+  padding: 1.2rem 1.4rem;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin-bottom: 2.4rem;
+}
+
+legend{
+  color: var(--base-color-pink);
+  font-size: 3.2rem;
+  font-weight: 900;
+  padding-bottom: 4.3rem;
+}
+
+input::placeholder, textarea::placeholder{
+  color: var(--base-color-blue);
+}
+
+fieldset div input{
+  width: 100%;
+  border: none;
+  background: var(--base-color-gray);
+  color: var(--base-color-blue);
+  font-size: 1.6rem;
+}
+
+textarea{
+  width: 100%;
+  background-color: var(--base-color-gray);
+  border: none;
+  font-size: 1.6rem;
+  color: var(--base-color-blue);
+}
+
+input:focus-visible, textarea:focus-visible {
+  outline: none;
+}
+
+button{
+  padding: 1.6rem;
+  border-radius: 1.6rem;
+  border: none;
+  color: var(--base-color-white);
+  background: linear-gradient(96deg, #343193 0%, #302C63 99.68%);
+}
+
+button:hover{
+  transition: all 300ms ease-in-out;
+  filter: contrast(101%) saturate(150%);
+  transform: scale(1.1);
+
+}
+
+footer{
+  background: linear-gradient(96deg, #343193 0%, #302C63 99.68%);
+  color: var(--base-color-white);
+  display: flex;
+  justify-content: center;
+  padding: 1.6rem;
+}
+
+/* ============================================================= */
+
+@media (min-width: 1000px) {
+
+  header {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  header div{
+    width: 55.4rem;
+    align-items: flex-start;
+  }
+
+  main{
+    flex-direction: initial;
+  }
+
+  .card{
+    width: 36.6rem;
+    height: 44.8rem;
+  }
+
+  form{
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+    gap: 9.2rem;
+  }
+
+  fieldset{
+    width: 100%;
+    margin: 9.5rem 0 9.4rem 10.9rem;
+  }
+}
+
